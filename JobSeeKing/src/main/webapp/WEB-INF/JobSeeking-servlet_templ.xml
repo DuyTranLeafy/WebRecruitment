@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- Cấu hình scan các package để tìm các bean -->
+    <!-- <context:component-scan base-package="controller, config" /> -->
+
+    <!-- Cấu hình Spring MVC -->
+    <!-- <mvc:annotation-driven /> -->
+
+    <!-- Cấu hình ViewResolver -->
+    <!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/" />
+        <property name="suffix" value=".jsp" />
+    </bean> -->
+
+    <!-- Cấu hình ResourceHandler để phục vụ các tài nguyên tĩnh (CSS, JavaScript, hình ảnh) -->
+    <!-- <mvc:resources mapping="/WEB-INF/resources/**" location="/WEB-INF/resources/" /> -->
+
+</beans>
